@@ -52,7 +52,7 @@ if (isset($_POST['type']) && $_POST['type'] == 'data') {
 		$data = array();
 		$data['url'] = str_replace('100x100', '600x600', $result->artworkUrl100);
 
-		$hires = str_replace('100x100bb', '100000x100000-999', $result->artworkUrl100);
+		$hires = str_replace('100x100bb', '100000x100000', $result->artworkUrl100);
 		$parts = parse_url($hires);
 		$hires = 'http://is5.mzstatic.com'.$parts['path'];
 
